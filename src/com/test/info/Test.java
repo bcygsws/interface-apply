@@ -2,8 +2,9 @@ package com.test.info;
 
 // 定义一个接口，该接口制定一种两个数的比较规则
 // 1.接口中定义的成员方法：写不写,都默认是public或者abstract来修饰(但是不能出现public final或者
-// abstract final来修饰；其原因是：因为在重写中，明确规定final方法不能被重写，试想如果用以上两种final方式修饰
-// 接口中声明的方法不能被重写，那么定义这个接口就毫无意义了)
+// abstract final以及public static 或者abstract static来修饰；其原因是：因为在重写中，明确规定
+// final和static定义的方法不能被重写，试想如果用以上两种final以及两种static方式修饰接口中声明的
+// 方法不能被重写，那么定义这个接口就毫无意义了
 // 2.接口汇总定义的成员变量：写不写默认都是public static final修饰的,由于有final修饰,因此接口中
 // 成员变量必须赋初值
 interface CompareInterface {
